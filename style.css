@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+:root {
+    --primary-color: linear-gradient(#192653, #131D41);
+    --secondary-color: #FF5C00;
+    --transparent-light: rgba(255, 255, 255, 0.10);
+    --transparent-light-hover: rgba(255, 255, 255, 0.3);
+    --transparent-black: rgba(0, 0, 0, 0.10);
+    --transparent-black-hover: rgba(0, 0, 0, 0.3);
+    --fading-black: rgba(0, 0, 0, 0.6); 
+}
+
+.page-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.transparent-white {
+    background-color: white;
+    opacity: 0.10;
+}
+
+.transparent-black {
+    background-color: black;
+    opacity: 0.10;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+body {
+    background: var(--primary-color);
+    min-height: 100vh;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 2rem;
+    border-radius: 6px;
+}
+
+button.btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+button.btn-ghost {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+button.btn-transparent {
+    background-color: var(--transparent-light);
+    color: white;
+}
+
+button.btn-transparent:hover {
+    background-color: var(--transparent-light-hover);
+}
+
+#logo {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+header#navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+header#navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header#navbar nav a {
+    padding-block: 1rem;
+    transition: all 0.3s ease;
+}
+
+header#navbar nav a:hover {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+header#navbar nav a:nth-child(1) {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#hero {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+#hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1;
+}
+
+#hero .hero-content h1 {
+    font-weight: 400;
+    font-size: 54px;
+}
+
+#hero .course-cards {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+
+#hero .course-cards .course-card figure {
+    background-color: black;
+    height: 200px;
+    background: url(/images/coding.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#hero .course-cards .course-card figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#hero .course-cards .course-card article {
+    padding: 1rem;
+}
+
+
+#hero .course-cards .course-card {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+}
+
+#hero .course-cards .course-card article .card-footer {
+    display: flex;
+    padding: 1rem 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--fading-black);
+    border-top: 1px var(--transparent-black) solid;
+}
+
+#hero .course-cards .course-card article .card-footer p {
+    font-size: 0.8rem;
+}
+
+#hero .course-cards .course-card article .card-header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.card-header div {
+    background-color: var(--transparent-black);
+    width: max-content;
+    padding: 0 1rem;
+    border-radius: 999px;
+}
+
+.card-header .price {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#offers {
+    display: flex;
+    margin-block: 3rem;
+    gap: 30px;
+}
+
+#offers .offer {
+    display: flex;
+    gap: 2rem;
+}
+
+.offer .offer-icon {
+    background-color: var(--transparent-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.offer article {
+    flex: 1;
+}
+
+.offer article p {
+    color: var(--transparent-light-hover);
+}
+
+.offer article h4 {
+    margin-bottom: 1rem;
+}

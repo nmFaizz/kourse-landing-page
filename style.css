@@ -154,7 +154,6 @@ header#navbar nav a:nth-child(1) {
 
 #hero .course-cards .course-card article {
     padding: 1rem;
-    position: relative;
 }
 
 
@@ -243,4 +242,46 @@ header#navbar nav a:nth-child(1) {
     box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+}
+
+
+@media screen and (max-width: 770px) {
+    header#navbar nav {
+        display: none;
+    }
+    
+    #hero {
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+    }
+
+    #hero .hero-content {
+        text-align: center;
+    }
+
+    #hero .course-cards {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #hero .course-cards .course-card {
+        width: 100%;
+        position: static;
+    }
+
+    #hero .course-cards .course-card:nth-child(2) {
+        width: 100%;
+        display: none;
+    }
+
+    #offers {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #offers .offer {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

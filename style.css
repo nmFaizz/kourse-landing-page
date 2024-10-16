@@ -154,6 +154,7 @@ header#navbar nav a:nth-child(1) {
 
 #hero .course-cards .course-card article {
     padding: 1rem;
+    position: relative;
 }
 
 
@@ -232,4 +233,14 @@ header#navbar nav a:nth-child(1) {
 
 .offer article h4 {
     margin-bottom: 1rem;
+}
+
+.course-card:nth-child(2) {
+    position: absolute;
+    z-index: -1;
+    margin-right: -5rem;
+    margin-top: -1.5rem;
+    box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.75);
 }
